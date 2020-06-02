@@ -1,4 +1,7 @@
 body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
     font-family: 'Quicksand', sans-serif;
     font-size: 18pt;
     display:flex;
@@ -7,15 +10,30 @@ body {
 }
 
 .chnavbar {
+    width: 100%;
+    display: flex;
     flex-flow: row;
     justify-items:center;
     align-content: center;
+    padding-right: 0px;
     padding-top: 30px;
     padding-left: 100px;
     height: 100px;
     background-color: #181818;
     color:white;
     font-size: 28pt;
+}
+
+.navbar-link-container {
+    margin-left: 700px;
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.nav-link:hover {
+cursor: pointer;
+text-decoration: none;
 }
 
 
