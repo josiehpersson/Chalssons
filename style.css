@@ -10,6 +10,9 @@ body {
 }
 
 .chnavbar {
+  flex-flow: row;
+  justify-items: center;
+  align-content: center;
   width: 100%;
   display: flex;
   flex-flow: row;
@@ -22,6 +25,122 @@ body {
   background-color: #181818;
   color: white;
   font-size: 28pt;
+}
+
+.kontaktSid-h1 {
+  color: white;
+  margin-left: 135px;
+}
+
+.kontaktSid-box1,
+.kontaktSid-box2 {
+  width: 480px;
+  height: 405px;
+  border: 1px solid #a9cec2;
+  box-sizing: border-box;
+  margin: 20px;
+}
+
+.kontaktSid-kontaktBild {
+  width: 419px;
+  height: 212px;
+  margin: 20px 0 0 28px;
+}
+
+.kontaktSid-container-content {
+  color: white;
+  margin-left: 30px;
+}
+
+.kontaktSid-container-content a {
+  text-decoration: none;
+  color: white;
+}
+
+.kontaktSid-container-content a:hover {
+  color: grey;
+}
+.kontaktSid-container-boxar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.kontaktSid-kontaktformulär,
+.kontaktSid-formulärBild {
+  background: #85a6a5;
+  box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.25);
+  width: 550px;
+  height: 635px;
+  margin-top: 40px;
+}
+.kontaktSid-formulärBild {
+  width: 450px;
+  height: 635px;
+}
+
+.kontaktSid-container-formulär {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#contactInfo {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background: #85a6a5;
+  border-bottom: 2px solid white;
+  color: white;
+}
+#contactInfo ::placeholder {
+  color: white;
+}
+
+#meddelande {
+  width: 80%;
+  height: 10%;
+  border: none;
+  border-radius: 5px;
+}
+
+form,
+.kontaktSid-h2 {
+  margin-left: 30px;
+  margin-top: 60px;
+}
+
+.kontaktSid-h2 {
+  color: white;
+}
+
+.kontaktSid-btn {
+  background: linear-gradient(90deg, #34363a 0%, #34363a 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #e5e5e5;
+  width: 83px;
+  height: 30px;
+  border-radius: 4px;
+  border: none;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+.kontaktSid-btn-container {
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #ffffff;
+  margin-left: 5px;
+  border-radius: 2px;
+  margin-top: -2px;
 }
 
 .navbar-link-container {
