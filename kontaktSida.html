@@ -4,11 +4,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakta oss</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+    <div class="topnav" id="myTopnav">
+        <a href="#hem" class="active">Hem</a>
+        <a href="#Om oss" id="nav-link">Om oss</a>
+        <a href="#Kontakt" id="nav-link">Kontakt</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <!--sidan-->
 <div class="container">
-   
     <h1 class="kontaktSid-h1">KOM I <br> KONTAKT <br> MED OSS.</be></h1>
     <div class="kontaktSid-container-boxar">
         <div class="kontaktSid-box1">
@@ -46,6 +56,16 @@
     </div>
 
 </div>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
 </body>
 </html>
 
