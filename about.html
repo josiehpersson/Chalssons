@@ -5,18 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/786cd46951.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="style.css" type="text/css" rel="stylesheet">
     <title>Chalssons industriservice AB || Om oss</title>
 </head>
 <body>
     <!--NAVBAR-->
-<div id="navbar" class="chnavbar">
-    <link id="chlogo" class="nav-link">CHALSSONS</link>
-    <div class="navbar-link-container">
-        <link id="omoss" class="nav-link" src="#"><label>Om oss</label></link>
-        <link id="kontakt" class="nav-link" src="#"><label>Kontakt</label></link>
-    </div>
-</div>
+    <nav class="navbar navbar-expand-lg chnavbar">
+        <a class="navbar-brand chnavbar-brand" href="#">CHALSSONS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon toggle-icon"><i class="fas fa-robot"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav navbar-link-container">
+            <li class="nav-item">
+              <a class="nav-link chnav-link" href="about.html">Om oss</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link chnav-link" href="kontaktSida.html">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 <!--NAVBAR SLUT-->
 
 <div class="container">
@@ -27,7 +37,7 @@
             <div class="about-decoration-img-1"></div>
         </div>
         <div class="about-text-container-right">
-            <p class="about-headline">VILKA ÄR VI?</p>
+            <p class="box-headline">VILKA ÄR VI?</p>
             <p class="about-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, facilis? Corrupti dolorum velit tenetur. Fuga excepturi architecto perferendis dolores at dolore optio cupiditate tempora necessitatibus sunt hic enim, consectetur omnis.</p>
         </div>
     </div>
@@ -38,7 +48,7 @@
             <div class="about-decoration-img-2"></div>
         </div>
         <div class="about-text-container-left">
-            <p class="about-headline">VAD GÖR VI?</p>
+            <p class="box-headline">VAD GÖR VI?</p>
             <p class="about-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, facilis? Corrupti dolorum velit tenetur. Fuga excepturi architecto perferendis dolores at dolore optio cupiditate tempora necessitatibus sunt hic enim, consectetur omnis.</p>
         </div>
         
@@ -49,8 +59,8 @@
             <div class="about-decoration-box-6"></div>
             <div class="about-decoration-img-3"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1959.9116182603007!2d15.420671216740224!3d60.57865468211325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466779aad53e4a67%3A0x4c20be6eb6964682!2sKullerbacken%2015%2C%20791%2094%20Falun%2C%20Sverige!5e0!3m2!1ssv!2suk!4v1591175531892!5m2!1ssv!2suk" width="400px" height="300px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
         </div>
-        <div class="about-text-container-right">
-            <p class="about-headline">VAR FINNS VI?</p>
+        <div class="about-text-container-right-2">
+            <p class="box-headline">VAR FINNS VI?</p>
             <p class="about-text"> Kullerbacken 15 </br> 791 94 Falun </br> Sverige
             </p>
         </div>
@@ -74,7 +84,9 @@
 </div>
 <!--FOOTER SLUT-->
 
-
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script src="chalssons.js"></script>
 </body>
 </html>
