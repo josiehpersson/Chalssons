@@ -89,7 +89,8 @@ body {
 .kontaktSid-box2 {
   width: 480px;
   height: 405px;
-  border: 1px solid #a9cec2;
+  background: rgba(78, 88, 96, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   margin: 20px;
 }
@@ -272,7 +273,8 @@ form,
   position: relative;
   height: 50vh;
   width: 85vw;
-  border: 1px solid #a9cec2;
+  background: rgba(78, 88, 96, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   align-self: center;
   margin-top: 5vh;
@@ -292,7 +294,8 @@ form,
 .information-container:last-of-type {
   margin-bottom: 10vh;
 }
-.about-text-container-left, .about-text-container-right {
+.about-text-container-left,
+.about-text-container-right {
   margin-top: 12%;
 }
 .about-box-container-left,
@@ -305,10 +308,10 @@ form,
 }
 
 .about-text-container-right-2 {
-margin-left: 50%;
-margin-top: 10%;
-font-size: 22pt;
-text-align: center;
+  margin-left: 50%;
+  margin-top: 10%;
+  font-size: 22pt;
+  text-align: center;
 }
 
 .about-box-container-right,
@@ -320,7 +323,6 @@ text-align: center;
   color: white;
   height: 100%;
 }
-
 
 .about-decoration-box-1,
 .about-decoration-box-3,
@@ -406,5 +408,4 @@ text-align: center;
 .about-decoration-img-3 {
   top: 15%;
   left: 20%;
-
 }
