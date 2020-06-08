@@ -92,6 +92,35 @@ body {
   border: 1px solid #a9cec2;
   box-sizing: border-box;
   margin: 20px;
+  position: relative;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.kontaktSid-box1 {
+  animation-name: boxOneAnimation;
+}
+
+.kontaktSid-box2 {
+  animation-name: boxTwoAnimation;
+}
+
+@keyframes boxOneAnimation {
+  from {
+    left: -700px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes boxTwoAnimation {
+  from {
+    right: -700px;
+  }
+  to {
+    right: 0px;
+  }
 }
 
 .kontaktSid-kontaktBild {
@@ -103,6 +132,7 @@ body {
 .kontaktSid-container-content {
   color: white;
   margin-left: 30px;
+  margin-top: 56px;
 }
 
 .kontaktSid-container-content a {
@@ -137,6 +167,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 #contactInfo {
@@ -292,7 +323,8 @@ form,
 .information-container:last-of-type {
   margin-bottom: 10vh;
 }
-.about-text-container-left, .about-text-container-right {
+.about-text-container-left,
+.about-text-container-right {
   margin-top: 12%;
 }
 .about-box-container-left,
@@ -305,10 +337,10 @@ form,
 }
 
 .about-text-container-right-2 {
-margin-left: 50%;
-margin-top: 10%;
-font-size: 22pt;
-text-align: center;
+  margin-left: 50%;
+  margin-top: 10%;
+  font-size: 22pt;
+  text-align: center;
 }
 
 .about-box-container-right,
@@ -320,7 +352,6 @@ text-align: center;
   color: white;
   height: 100%;
 }
-
 
 .about-decoration-box-1,
 .about-decoration-box-3,
@@ -406,5 +437,4 @@ text-align: center;
 .about-decoration-img-3 {
   top: 15%;
   left: 20%;
-
 }
