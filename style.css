@@ -93,6 +93,35 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   margin: 20px;
+  position: relative;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.kontaktSid-box1 {
+  animation-name: boxOneAnimation;
+}
+
+.kontaktSid-box2 {
+  animation-name: boxTwoAnimation;
+}
+
+@keyframes boxOneAnimation {
+  from {
+    left: -700px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes boxTwoAnimation {
+  from {
+    right: -700px;
+  }
+  to {
+    right: 0px;
+  }
 }
 
 .kontaktSid-kontaktBild {
@@ -104,6 +133,7 @@ body {
 .kontaktSid-container-content {
   color: white;
   margin-left: 30px;
+  margin-top: 56px;
 }
 
 .kontaktSid-container-content a {
@@ -138,6 +168,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 #contactInfo {
@@ -181,6 +212,7 @@ form,
   border: none;
   justify-content: space-between;
   margin-right: 20px;
+  font-size: 15px;
 }
 .arrow-down {
   width: 0;
@@ -219,7 +251,14 @@ form,
   z-index: 1;
   left: 22%;
   top: 25%;
+  animation-name: info-boxOne-animation;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;
 }
+  @keyframes info-boxOne-animation {
+    from {left: 700px;}
+    to {left: 300px;}
+  }
 
 .start-page-decor-box-2 {
   background: rgba(169, 206, 194, 0.5);
@@ -230,6 +269,14 @@ form,
   z-index: 2;
   left: 25%;
   top: 20%;
+  animation-name: info-boxTwo-animation;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;
+}
+
+@keyframes info-boxTwo-animation {
+  from {left: -700px;}
+  to {left: 350px;}
 }
 .start-page-info-box {
   display: flex;
@@ -246,6 +293,14 @@ form,
   left: 30%;
   top: 30%;
   padding-bottom: 20px;
+  animation-name: info-boxInfo-animation;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;
+}
+
+@keyframes info-boxInfo-animation {
+  from {top: -700px;}
+  to {top: 230px;}
 }
 
 .start-page-headline {
