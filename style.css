@@ -252,13 +252,17 @@ form,
   left: 22%;
   top: 25%;
   animation-name: info-boxOne-animation;
-  animation-duration: 3s;  
+  animation-duration: 3s;
   animation-fill-mode: forwards;
 }
-  @keyframes info-boxOne-animation {
-    from {left: 700px;}
-    to {left: 300px;}
+@keyframes info-boxOne-animation {
+  from {
+    left: 700px;
   }
+  to {
+    left: 300px;
+  }
+}
 
 .start-page-decor-box-2 {
   background: rgba(169, 206, 194, 0.5);
@@ -270,13 +274,17 @@ form,
   left: 25%;
   top: 20%;
   animation-name: info-boxTwo-animation;
-  animation-duration: 3s;  
+  animation-duration: 3s;
   animation-fill-mode: forwards;
 }
 
 @keyframes info-boxTwo-animation {
-  from {left: -700px;}
-  to {left: 350px;}
+  from {
+    left: -700px;
+  }
+  to {
+    left: 350px;
+  }
 }
 .start-page-info-box {
   display: flex;
@@ -294,13 +302,17 @@ form,
   top: 30%;
   padding-bottom: 20px;
   animation-name: info-boxInfo-animation;
-  animation-duration: 3s;  
+  animation-duration: 3s;
   animation-fill-mode: forwards;
 }
 
 @keyframes info-boxInfo-animation {
-  from {top: -700px;}
-  to {top: 230px;}
+  from {
+    top: -700px;
+  }
+  to {
+    top: 230px;
+  }
 }
 
 .start-page-headline {
@@ -340,10 +352,32 @@ form,
   align-items: center;
   align-content: center;
   padding-right: 40px;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-name: info-container-animation-1;
 }
 .information-container:nth-of-type(even) {
   flex-flow: row-reverse;
   padding-left: 40px;
+  animation-name: info-container-animation-2;
+}
+
+@keyframes info-container-animation-1 {
+  from {
+    left: -1000px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes info-container-animation-2 {
+  from {
+    right: -1000px;
+  }
+  to {
+    right: 0px;
+  }
 }
 
 .information-container:last-of-type {
