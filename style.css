@@ -199,12 +199,13 @@ form,
   color: white;
   background-size: 100%;
   background-repeat: no-repeat;
-  object-fit: cover;
+  object-fit: fill;
   height: 900px;
   width: 100vw;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   z-index: 0;
+  margin-left: -410px;
 }
 
 .start-page-decor-box-1 {
