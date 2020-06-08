@@ -340,6 +340,8 @@ form,
 
 /*X-LARGE DEVICES (STOR DATOR)- STARTSIDA */
 
+/*ORIENTATION: LANDSCAPE - STARTSIDA*/
+
 /*OMOSS-SIDA*/
 
 .box-headline {
@@ -518,10 +520,19 @@ form,
 
 /*EXTRA SMALL DEVICES (MOBIL) - OMOSS */
 
+/*@media only screen and(max-width: 600px) {} */
+
 /*SMALL DEVICES (STOR MOBIL, SMÅ PADDOR) - OMOSS */
+/*@media only screen and(min-width: 600px) {} */
 
 /*MEDIUM DEVICES (PADDA) - OMOSS */
+/*@media only screen and(min-width: 768px) {} */
 
 /*LARGE DEVICES (LAPTOP) - OMOSS */
+/*@media only screen and(min-width: 992px) {} */
 
 /*X-LARGE DEVICES (STOR DATOR)- OMOSS */
+/*@media only screen and(min-width: 1200px) {} */
+
+/*ORIENTATION: LANDSCAPE - STARTSIDA*/
+/*@media only screen and(orientation: landscape) {} */
