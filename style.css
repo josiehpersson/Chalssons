@@ -333,7 +333,7 @@ form,
 /*OMOSS-SIDA*/
 
 .box-headline {
-  font-size: 28pt;
+  font-size: 2rem;
 }
 
 .information-container {
@@ -351,32 +351,32 @@ form,
   justify-items: center;
   align-items: center;
   align-content: center;
-  padding-right: 40px;
+  padding-right:10vw;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-name: info-container-animation-1;
 }
 .information-container:nth-of-type(even) {
   flex-flow: row-reverse;
-  padding-left: 40px;
+  padding-left: 10vw;
   animation-name: info-container-animation-2;
 }
 
 @keyframes info-container-animation-1 {
   from {
-    left: -1000px;
+    left: -100vw;
   }
   to {
-    left: 0px;
+    left: 0vw;
   }
 }
 
 @keyframes info-container-animation-2 {
   from {
-    right: -1000px;
+    right: -100vw;
   }
   to {
-    right: 0px;
+    right: 0vw;
   }
 }
 
@@ -399,7 +399,7 @@ form,
 .about-text-container-right-2 {
   margin-left: 50%;
   margin-top: 10%;
-  font-size: 22pt;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -416,8 +416,8 @@ form,
 .about-decoration-box-1,
 .about-decoration-box-3,
 .about-decoration-box-5 {
-  height: 300px;
-  width: 280px;
+  height: 30vh;
+  width: 20vw;
   position: absolute;
   z-index: 0;
   top: 12%;
@@ -429,8 +429,8 @@ form,
 .about-decoration-box-2,
 .about-decoration-box-4,
 .about-decoration-box-6 {
-  height: 320px;
-  width: 350px;
+  height: 30vh;
+  width: 20vw;
   position: absolute;
   z-index: 1;
   top: 14%;
@@ -439,8 +439,8 @@ form,
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .about-decoration-box-3 {
-  height: 350px;
-  width: 300px;
+  height: 35vh;
+  width: 20vw;
   top: 10%;
   left: 58%;
   background: linear-gradient(180deg, #85a6a5 0%, rgba(255, 255, 255, 0) 100%),
@@ -449,8 +449,8 @@ form,
 }
 
 .about-decoration-box-4 {
-  height: 300px;
-  width: 400px;
+  height: 35vh;
+  width: 21vw;
   top: 12%;
   left: 50%;
   background: rgba(78, 88, 96, 0.2);
@@ -458,8 +458,8 @@ form,
 }
 
 .about-decoration-box-5 {
-  height: 400px;
-  width: 350px;
+  height: 35vh;
+  width: 20vw;
   top: 8%;
   left: 18%;
   background: linear-gradient(180deg, #687e84 0%, rgba(255, 255, 255, 0) 100%),
@@ -468,8 +468,8 @@ form,
 }
 
 .about-decoration-box-6 {
-  width: 400px;
-  height: 350px;
+  width: 25vw;
+  height: 35vh;
   top: 12%;
   left: 19%;
   background: rgba(78, 88, 96, 0.2);
@@ -479,9 +479,11 @@ form,
 .about-decoration-img-1,
 .about-decoration-img-2,
 .about-decoration-img-3 {
-  height: 300px;
-  width: 400px;
+  height: 30vh;
+  width: 20vw;
   position: absolute;
+  box-sizing: border-box;
+  content: fill;
   z-index: 2;
   top: 16%;
   left: 28%;
