@@ -180,6 +180,7 @@ form,
   border: none;
   justify-content: space-between;
   margin-right: 20px;
+  font-size: 15px;
 }
 .arrow-down {
   width: 0;
