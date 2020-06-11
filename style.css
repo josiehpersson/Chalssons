@@ -2,6 +2,9 @@ body {
   margin: 0px;
   padding: 0px;
   width: 100vw;
+  height: 100%;
+  height: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
   font-family: 'Quicksand', sans-serif;
   font-size: 18pt;
@@ -41,7 +44,8 @@ body {
   font-size: 28pt;
 }
 
-.chnav-link:hover {
+.chnav-link:hover,
+.chnavbar-brand:hover {
   cursor: pointer;
   text-decoration: none;
   color: #34363a;
@@ -78,6 +82,128 @@ body {
   box-sizing: border-box;
   width: 100%;
 }
+
+/*EXTRA SMALL DEVICES (MOBIL) - NAVBAR/FOOTER */
+@media only screen and (max-width: 600px) {
+  /*NAVBAR*/
+  .chnavbar {
+    max-width: 600px;
+    min-width: 300px;
+    width: 100vw;
+    padding-right: 0px;
+    padding-top: 5px;
+    padding-left: 10px;
+    height: 50px;
+  }
+
+  .chnavbar-brand {
+    color: white;
+    font-size: 1rem;
+  }
+  .chnav-link {
+    color: white;
+    font-size: 1rem;
+  }
+
+  .chnav-link:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #34363a;
+  }
+
+  .toggle-icon {
+    color: white;
+    font-size: 1rem;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+
+  /*FOOTER*/
+
+  .chfooter {
+    width: 100vw;
+    height: 100px;
+    font-size: 0.7rem;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+/*SMALL DEVICES (STOR MOBIL, SMÅ PADDOR) - NAVBAR/FOOTER */
+@media only screen and (min-width: 600px) {
+  /*NAVBAR*/
+  .chnavbar {
+    width: 100vw;
+    padding-right: 0px;
+    padding-top: 5px;
+    padding-left: 10px;
+    height: 75px;
+  }
+
+  .chnavbar-brand {
+    color: white;
+    font-size: 2rem;
+  }
+  .chnav-link {
+    color: white;
+    font-size: 2rem;
+  }
+
+  .chnav-link:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #34363a;
+  }
+
+  .toggle-icon {
+    color: white;
+    font-size: 2rem;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+
+  /*FOOTER*/
+
+  .chfooter {
+    width: 100vw;
+    height: 150px;
+    font-size: 1rem;
+    margin-bottom: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+/*LARGE DEVICES (LAPTOP) - NAVBAR/FOOTER */
+@media only screen and (min-width: 992px) {
+    /*FOOTER*/
+
+    .chfooter {
+      width: 100vw;
+      height: 150px;
+      font-size: 1.5rem;
+      margin-bottom: 0px;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+}
+
+/*ORIENTATION: LANDSCAPE - NAVBAR/FOOTER*/
+@media only screen and (orientation: landscape) {
+      /*FOOTER*/
+
+      .chfooter {
+        width: 100vw;
+        height: 150px;
+        font-size: 1.5rem;
+        margin-bottom: 0px;
+        padding-right: 30px;
+        padding-left: 30px;
+      }
+}
+
+
 /*KONTAKTSIDA*/
 
 .kontaktSid-h1 {
@@ -330,6 +456,24 @@ form,
   font-size: 14pt;
 }
 
+/*EXTRA SMALL DEVICES (MOBIL) - STARTSIDA */
+/*@media only screen and (max-width: 600px) {} */
+
+/*SMALL DEVICES (STOR MOBIL, SMÅ PADDOR) - STARTSIDA */
+/*@media only screen and (min-width: 600px) {} */
+
+/*MEDIUM DEVICES (PADDA) - STARTSIDA */
+/*@media only screen and (min-width: 768px) {} */
+
+/*LARGE DEVICES (LAPTOP) - STARTSIDA */
+/*@media only screen and (min-width: 992px) {} */
+
+/*X-LARGE DEVICES (STOR DATOR)- STARTSIDA */
+/*@media only screen and (min-width: 1200px) {} */
+
+/*ORIENTATION: LANDSCAPE - STARTSIDA*/
+/*@media only screen and (orientation: landscape) {} */
+
 /*OMOSS-SIDA*/
 
 .box-headline {
@@ -351,7 +495,7 @@ form,
   justify-items: center;
   align-items: center;
   align-content: center;
-  padding-right:10vw;
+  padding-right: 10vw;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-name: info-container-animation-1;
@@ -491,6 +635,11 @@ form,
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.google-maps {
+  height: 30vh;
+  width: 20vw;
+}
+
 .about-decoration-img-2 {
   top: 14%;
   left: 42%;
@@ -499,4 +648,348 @@ form,
 .about-decoration-img-3 {
   top: 15%;
   left: 20%;
+}
+
+/*EXTRA SMALL DEVICES (MOBIL) - OMOSS */
+@media only screen and (max-width: 600px) {
+  .box-headline {
+    font-size: 1rem;
+  }
+
+  .information-container {
+    height: 35vh;
+    width: 90vw;
+    font-size: 0.6rem;
+    margin-top: 1vh;
+    padding-right: 5vw;
+  }
+  .information-container:nth-of-type(even) {
+    padding-left: 5vw;
+  }
+
+  .information-container:last-of-type {
+    margin-bottom: 1vh;
+  }
+  .about-text-container-left,
+  .about-text-container-right {
+    margin-top: 20%;
+  }
+
+  .about-text-container-right-2 {
+    margin-left: 60%;
+    margin-top: 40%;
+    font-size: 0.7rem;
+  }
+
+  .about-decoration-img-1,
+  .about-decoration-img-2,
+  .about-decoration-img-3,
+  .about-decoration-box-1,
+  .about-decoration-box-3,
+  .about-decoration-box-5,
+  .about-decoration-box-2,
+  .about-decoration-box-4,
+  .about-decoration-box-6 {
+    height: 15vh;
+    width: 32vw;
+    top: 30%;
+    left: 10%;
+  }
+
+  .about-decoration-box-1 {
+    top: 31%;
+    left: 12%;
+  }
+  .about-decoration-box-2 {
+    top: 28%;
+    left: 8%;
+  }
+  .about-decoration-box-3 {
+    top: 31%;
+    left: 25%;
+  }
+
+  .about-decoration-box-4 {
+    top: 28%;
+    left: 23%;
+  }
+
+  .about-decoration-box-5 {
+    top: 31%;
+    left: 8%;
+  }
+
+  .about-decoration-box-6 {
+    top: 28%;
+    left: 12%;
+  }
+
+  .google-maps {
+    height: 15vh;
+    width: 32vw;
+  }
+
+  .about-decoration-img-2 {
+    left: 20%;
+  }
+}
+
+/*SMALL DEVICES (STOR MOBIL, SMÅ PADDOR) - OMOSS */
+@media only screen and (min-width: 600px) {
+  .box-headline {
+    font-size: 1.5rem;
+  }
+
+  .information-container {
+    font-size: 1rem;
+  }
+  .about-text-container-left,
+  .about-text-container-right {
+    margin-top: 15%;
+  }
+
+  .about-text-container-right-2 {
+    margin-top: 40%;
+    font-size: 1rem;
+  }
+}
+
+/*MEDIUM DEVICES (PADDA) - OMOSS */
+@media only screen and (min-width: 768px) {
+  .box-headline {
+    font-size: 2rem;
+  }
+
+  .information-container {
+    height: 35vh;
+    font-size: 1rem;
+    padding-right: 2vw;
+  }
+  .information-container:nth-of-type(even) {
+    padding-left: 2vw;
+  }
+  .about-text-container-right-2 {
+    margin-left: 50%;
+    margin-top: 35%;
+    font-size: 1rem;
+  }
+
+  .about-decoration-img-1,
+  .about-decoration-img-2,
+  .about-decoration-img-3,
+  .about-decoration-box-1,
+  .about-decoration-box-3,
+  .about-decoration-box-5,
+  .about-decoration-box-2,
+  .about-decoration-box-4,
+  .about-decoration-box-6 {
+    height: 20vh;
+    width: 30vw;
+    top: 20%;
+    left: 10%;
+  }
+
+  .about-decoration-box-1 {
+    top: 22%;
+    left: 12%;
+  }
+  .about-decoration-box-2 {
+    top: 25%;
+    left: 8%;
+  }
+  .about-decoration-box-3 {
+    top: 21%;
+    left: 25%;
+  }
+
+  .about-decoration-box-4 {
+    top: 24%;
+    left: 23%;
+  }
+
+  .about-decoration-box-5 {
+    top: 22%;
+    left: 8%;
+  }
+
+  .about-decoration-box-6 {
+    top: 25%;
+    left: 12%;
+  }
+
+  .google-maps {
+    height: 20vh;
+    width: 30vw;
+  }
+
+  .about-decoration-img-2 {
+    left: 20%;
+  }
+}
+
+/*LARGE DEVICES (LAPTOP) - OMOSS */
+@media only screen and (min-width: 992px) {
+  .box-headline {
+    font-size: 2rem;
+  }
+
+  .information-container {
+    height: 35vh;
+    width: 90vw;
+    font-size: 1.3rem;
+    margin-top: 1vh;
+    padding-right: 5vw;
+  }
+  .information-container:nth-of-type(even) {
+    padding-left: 5vw;
+  }
+
+  .information-container:last-of-type {
+    margin-bottom: 1vh;
+  }
+  .about-text-container-left,
+  .about-text-container-right {
+    margin-top: 25%;
+  }
+
+  .about-text-container-right-2 {
+    margin-left: 50%;
+    margin-top: 38%;
+    font-size: 1.3rem;
+  }
+
+  .about-decoration-img-1,
+  .about-decoration-img-2,
+  .about-decoration-img-3,
+  .about-decoration-box-1,
+  .about-decoration-box-3,
+  .about-decoration-box-5,
+  .about-decoration-box-2,
+  .about-decoration-box-4,
+  .about-decoration-box-6 {
+    height: 20vh;
+    width: 32vw;
+    top: 20%;
+    left: 10%;
+  }
+
+  .about-decoration-img-2 {
+    left: 20%;
+  }
+
+  .google-maps {
+    height: 20vh;
+    width: 32vw;
+  }
+  .about-decoration-box-1 {
+    top: 25%;
+    left: 8%;
+  }
+  .about-decoration-box-2 {
+    top: 22%;
+    left: 12%;
+  }
+  .about-decoration-box-3 {
+    top: 24%;
+    left: 25%;
+  }
+
+  .about-decoration-box-4 {
+    top: 22%;
+    left: 23%;
+  }
+
+  .about-decoration-box-5 {
+    top: 25%;
+    left: 8%;
+  }
+
+  .about-decoration-box-6 {
+    top: 22%;
+    left: 12%;
+  }
+}
+
+/*ORIENTATION: LANDSCAPE - OMOSS*/
+@media only screen and (orientation: landscape) {
+  .box-headline {
+    font-size: 2rem;
+  }
+
+  .information-container {
+    height: 50vh;
+    width: 90vw;
+    font-size: 1.5rem;
+    margin-top: 1vh;
+    padding-right: 5vw;
+  }
+  .information-container:nth-of-type(even) {
+    padding-left: 5vw;
+  }
+
+  .information-container:last-of-type {
+    margin-bottom: 1vh;
+  }
+  .about-text-container-left,
+  .about-text-container-right {
+    margin-top: 20%;
+  }
+
+  .about-text-container-right-2 {
+    margin-left: 60%;
+    margin-top: 20%;
+    font-size: 1.5rem;
+  }
+
+  .about-decoration-img-1,
+  .about-decoration-img-2,
+  .about-decoration-img-3,
+  .about-decoration-box-1,
+  .about-decoration-box-3,
+  .about-decoration-box-5,
+  .about-decoration-box-2,
+  .about-decoration-box-4,
+  .about-decoration-box-6 {
+    height: 30vh;
+    width: 28vw;
+    top: 20%;
+    left: 10%;
+  }
+
+  .google-maps {
+    height: 30vh;
+    width: 28vw;
+  }
+
+  .about-decoration-img-2 {
+    left: 20%;
+  }
+  .about-decoration-box-1 {
+    top: 25%;
+    left: 12%;
+  }
+  .about-decoration-box-2 {
+    top: 22%;
+    left: 8%;
+  }
+  .about-decoration-box-3 {
+    top: 26%;
+    left: 22%;
+  }
+
+  .about-decoration-box-4 {
+    top: 22%;
+    left: 24%;
+  }
+
+  .about-decoration-box-5 {
+    top: 21%;
+    left: 8%;
+  }
+
+  .about-decoration-box-6 {
+    top: 25%;
+    left: 12%;
+  }
+
 }
