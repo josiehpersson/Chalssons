@@ -366,108 +366,108 @@ form,
 
 /*STARTSIDA*/
 
-.start-img-container {
-  background-color: black;
-  color: white;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  object-fit: fill;
-  height: 900px;
-  width: 100vw;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  z-index: 0;
-  margin-left: -410px;
-}
-
-.start-page-decor-box-1 {
-  background: linear-gradient(180deg, #85a6a5 0%, rgba(255, 255, 255, 0) 100%),
-    #4e5860;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  width: 700px;
-  height: 600px;
-  position: absolute;
-  z-index: 1;
-  left: 22%;
-  top: 25%;
-  animation-name: info-boxOne-animation;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-}
-@keyframes info-boxOne-animation {
-  from {
-    left: 700px;
+  .start-img-container {
+    background-color: black;
+    color: white;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    height: 900px;
+    width: 100vw;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    z-index: 0;
+    margin-left: -410px;
   }
-  to {
-    left: 300px;
+  
+  .start-page-decor-box-1 {
+    background: linear-gradient(180deg, #85a6a5 0%, rgba(255, 255, 255, 0) 100%),
+      #4e5860;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 700px;
+    height: 600px;
+    position: absolute;
+    z-index: 1;
+    left: 22%;
+    top: 25%;
+    animation-name: info-boxOne-animation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
   }
-}
-
-.start-page-decor-box-2 {
-  background: rgba(169, 206, 194, 0.5);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  width: 750px;
-  height: 750px;
-  position: absolute;
-  z-index: 2;
-  left: 25%;
-  top: 20%;
-  animation-name: info-boxTwo-animation;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes info-boxTwo-animation {
-  from {
-    left: -700px;
+  @keyframes info-boxOne-animation {
+    from {
+      left: 700px;
+    }
+    to {
+      left: 300px;
+    }
   }
-  to {
-    left: 350px;
+  
+  .start-page-decor-box-2 {
+    background: rgba(169, 206, 194, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    z-index: 2;
+    left: 25%;
+    top: 20%;
+    animation-name: info-boxTwo-animation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
   }
-}
-.start-page-info-box {
-  display: flex;
-  flex-flow: column;
-  justify-content: space-evenly;
-  padding-left: 50px;
-  padding-right: 50px;
-  background: #4e5860;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  height: 600px;
-  width: 800px;
-  z-index: 3;
-  position: absolute;
-  left: 30%;
-  top: 30%;
-  padding-bottom: 20px;
-  animation-name: info-boxInfo-animation;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes info-boxInfo-animation {
-  from {
-    top: -700px;
+  
+  @keyframes info-boxTwo-animation {
+    from {
+      left: -700px;
+    }
+    to {
+      left: 350px;
+    }
   }
-  to {
-    top: 230px;
+  .start-page-info-box {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: #4e5860;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 600px;
+    width: 800px;
+    z-index: 3;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    padding-bottom: 20px;
+    animation-name: info-boxInfo-animation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
   }
-}
-
-.start-page-headline {
-  font-size: 36pt;
-}
-
-.start-page-btn {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: #34363a;
-  color: white;
-  width: 20%;
-  height: 10%;
-  margin-left: 70%;
-  border: none;
-  font-size: 14pt;
-}
+  
+  @keyframes info-boxInfo-animation {
+    from {
+      top: -700px;
+    }
+    to {
+      top: 230px;
+    }
+  }
+  
+  .start-page-headline {
+    font-size: 36pt;
+  }
+  
+  .start-page-btn {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #34363a;
+    color: white;
+    width: 20%;
+    height: 10%;
+    margin-left: 70%;
+    border: none;
+    font-size: 14pt;
+  }
 
 /*EXTRA SMALL DEVICES (MOBIL) - STARTSIDA */
 @media only screen and (max-width: 600px) {
@@ -742,7 +742,8 @@ form,
   .start-img-container {
     height: 80vh;
     width: 100vw;
-    margin-left: -13vw;
+    float: left;
+    margin-left: -410px;
   }
   
   .start-page-decor-box-1 {

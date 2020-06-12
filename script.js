@@ -1,3 +1,11 @@
+const aboutBtn = document.getElementById('about-btn');
+const submitBtn = document.getElementById('contact-submit-btn');
+
+aboutBtn.addEventListener('click', handleClick = () => {
+    window.location.href = "about.html";
+});
+
+
 // validatorer för kontaktformulär
 class _CHValidator {
     constructor() {
@@ -14,7 +22,7 @@ class _CHValidator {
     }
 }
 
-export class CHTextValidator extends _CHValidator {
+class CHTextValidator extends _CHValidator {
     constructor(minlen, maxlen) {
         super();
         this.minlen = minlen;
@@ -25,7 +33,7 @@ export class CHTextValidator extends _CHValidator {
     }
 }
 
-export class CHMailValidator extends CHTextValidator {
+class CHMailValidator extends CHTextValidator {
     constructor() {
         super(6, 64);
     }
@@ -39,7 +47,7 @@ const isValidMail = (text) => {
     return /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(text);
 }
 
-export class CHMessageValidator extends CHTextValidator {
+class CHMessageValidator extends CHTextValidator {
     constructor() {
         super(6, null);
         }
