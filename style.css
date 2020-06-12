@@ -57,6 +57,10 @@ body {
   margin-right: 40px;
 }
 
+
+.logotype {
+  height: 80px;
+}
 /*FOOTER*/
 
 .chfooter {
@@ -118,6 +122,11 @@ body {
     margin-top: 10px;
   }
 
+  
+  .logotype {
+    height: 30px;
+  }
+
   /*FOOTER*/
 
   .chfooter {
@@ -161,6 +170,10 @@ body {
     font-size: 2rem;
     margin-right: 5px;
     margin-top: 10px;
+  }
+
+  .logotype {
+    height: 50px;
   }
 
   /*FOOTER*/
@@ -457,286 +470,22 @@ form,
 }
 
 /*EXTRA SMALL DEVICES (MOBIL) - STARTSIDA */
-@media only screen and (max-width: 600px) {
-  .start-img-container {
-    height: 80vh;
-    width: 100vw;
-    margin-left: -4vw;
-  }
-  
-  .start-page-decor-box-1 {
-    height: 40vh;
-    width: 80vw;
-    left: -10%;
-    top: 15%;
-  }
-  @keyframes info-boxOne-animation {
-    from {
-      left: 700px;
-    }
-    to {
-      left: 20px;
-    }
-  }
-  
-  .start-page-decor-box-2 {
-    height: 50vh;
-    width: 80vw;
-    left: 0%;
-    top: 20%;
-  }
-  
-  @keyframes info-boxTwo-animation {
-    from {
-      left: -700px;
-    }
-    to {
-      left: 40px;
-    }
-  }
-  .start-page-info-box {
-    padding-left: 5vw;
-    padding-right: 5vw;
-    height: 50vh;
-    width: 80vw;
-    left: 15%;
-    padding-bottom: 20px;
-    font-size: 0.6rem;
-  }
-  
-  @keyframes info-boxInfo-animation {
-    from {
-      top: -700px;
-    }
-    to {
-      top: 17vh;
-    }
-  }
-  
-  .start-page-headline {
-    font-size: 1rem;
-  }
-  
-  .start-page-btn {
-    width: 50%;
-    height: 10%;
-    margin-left: 20%;
-    font-size: 0.6rem;
-  }
-  
-}
+/*@media only screen and (max-width: 600px) {} */
 
 /*SMALL DEVICES (STOR MOBIL, SMÅ PADDOR) - STARTSIDA */
-@media only screen and (min-width: 600px) {
-  .start-img-container {
-    height: 80vh;
-    width: 100vw;
-    margin-left: -7vw;
-  }
-  .start-page-info-box {
-    font-size: 1rem;
-  }
-  
-  .start-page-headline {
-    font-size: 1.5rem;
-  }
-  
-  .start-page-btn {
-    font-size: 1rem;
-  }
-  
-}
+/*@media only screen and (min-width: 600px) {} */
 
 /*MEDIUM DEVICES (PADDA) - STARTSIDA */
-@media only screen and (min-width: 768px) {
-  .start-img-container {
-    margin-left: -5vw;
-  }
-  
-  .start-page-decor-box-1 {
-    height: 50vh;
-  }
-  @keyframes info-boxOne-animation {
-    from {
-      left: 700px;
-    }
-    to {
-      left: 40px;
-    }
-  }
-  
-  .start-page-decor-box-2 {
-    height: 50vh;
-    width: 80vw;
-  }
-  
-  @keyframes info-boxTwo-animation {
-    from {
-      left: -700px;
-    }
-    to {
-      left: 60px;
-    }
-  }
-  .start-page-info-box {
-    padding-left: 5vw;
-    padding-right: 5vw;
-    height: 50vh;
-    width: 80vw;
-    left: 15%;
-    padding-bottom: 20px;
-    font-size: 1rem;
-  }
-  
-  @keyframes info-boxInfo-animation {
-    from {
-      top: -700px;
-    }
-    to {
-      top: 17vh;
-    }
-  }
-  
-  .start-page-headline {
-    font-size: 1.5rem;
-  }
-  
-  .start-page-btn {
-    width: 50%;
-    height: 10%;
-    margin-left: 20%;
-    font-size: 1rem;
-  }
-  
-}
+/*@media only screen and (min-width: 768px) {} */
 
 /*LARGE DEVICES (LAPTOP) - STARTSIDA */
-@media only screen and (min-width: 992px) {
-  
-  .start-page-decor-box-1 {
-    height: 50vh;
-    width: 80vw;
-    top: 15%;
-  }
-  @keyframes info-boxOne-animation {
-    from {
-      left: 700px;
-    }
-    to {
-      left: 60px;
-    }
-  }
-  
-  @keyframes info-boxTwo-animation {
-    from {
-      left: -700px;
-    }
-    to {
-      left: 40px;
-    }
-  }
-  .start-page-info-box {
-    padding-left: 5vw;
-    padding-right: 5vw;
-    height: 50vh;
-    width: 80vw;
-    left: 15%;
-    padding-bottom: 20px;
-    font-size: 1.3rem;
-  }
-  
-  @keyframes info-boxInfo-animation {
-    from {
-      top: -700px;
-    }
-    to {
-      top: 17vh;
-    }
-  }
-  
-  .start-page-headline {
-    font-size: 2rem;
-  }
-  
-  .start-page-btn {
-    width: 35%;
-    height: 10%;
-    margin-left: 60%;
-    font-size: 1.3rem;
-  }
-  
-}
+/*@media only screen and (min-width: 992px) {} */
+
+/*X-LARGE DEVICES (STOR DATOR)- STARTSIDA */
+/*@media only screen and (min-width: 1200px) {} */
 
 /*ORIENTATION: LANDSCAPE - STARTSIDA*/
-@media only screen and (orientation: landscape) {
-  .start-img-container {
-    height: 80vh;
-    width: 100vw;
-    margin-left: -17%;
-  }
-  
-  .start-page-decor-box-1 {
-    height: 50vh;
-    width: 50vw;
-    left: -10%;
-    top: 15%;
-  }
-  @keyframes info-boxOne-animation {
-    from {
-      left: 700px;
-    }
-    to {
-      left: 250px;
-    }
-  }
-  
-  .start-page-decor-box-2 {
-    height: 60vh;
-    width: 50vw;
-    left: 0%;
-    top: 20%;
-  }
-  
-  @keyframes info-boxTwo-animation {
-    from {
-      left: -700px;
-    }
-    to {
-      left: 300px;
-    }
-  }
-  .start-page-info-box {
-    padding-left: 5vw;
-    padding-right: 5vw;
-    height: 50vh;
-    width: 50vw;
-    left: 25%;
-    padding-bottom: 30px;
-    padding-top: 10px;
-    font-size: 1.5rem;
-  }
-  
-  @keyframes info-boxInfo-animation {
-    from {
-      top: -700px;
-    }
-    to {
-      top: 18vh;
-    }
-  }
-  
-  .start-page-headline {
-    font-size: 2rem;
-  }
-  
-  .start-page-btn {
-    width: 20%;
-    height: 10%;
-    margin-left: 75%;
-    font-size: 1rem;
-  }
-  
-}
+/*@media only screen and (orientation: landscape) {} */
 
 /*OMOSS-SIDA*/
 
