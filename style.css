@@ -470,22 +470,339 @@ form,
 }
 
 /*EXTRA SMALL DEVICES (MOBIL) - STARTSIDA */
-/*@media only screen and (max-width: 600px) {} */
+@media only screen and (max-width: 600px) {
+  .start-img-container {
+    height: 80vh;
+    width: 100vw;
+    margin-left: -5vw;
+  }
+  
+  .start-page-decor-box-1 {
+    width: 80vw;
+    height: 50vh;
+    top: 20vh;
+  }
+  @keyframes info-boxOne-animation {
+    from {
+      left: 700px;
+    }
+    to {
+      left: 5vw;
+    }
+  }
+  
+  .start-page-decor-box-2 {
+    width: 80vw;
+    height: 40vh;
+    top: 27vh;
+  }
+  
+  @keyframes info-boxTwo-animation {
+    from {
+      left: -700px;
+    }
+    to {
+      left: 10vw;
+    }
+  }
+  .start-page-info-box {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    height: 30vh;
+    width: 90vw;
+    left: 7%;
+    padding-bottom: 5vh;
+    font-size: 0.6rem;
+  }
+  
+  @keyframes info-boxInfo-animation {
+    from {
+      top: -700px;
+    }
+    to {
+      top: 30vh;
+    }
+  }
+  
+  .start-page-headline {
+    font-size: 1rem;
+  }
+  
+  .start-page-btn {
+    width: 50%;
+    height: 10%;
+    margin-left: 25%;
+    font-size: 1rem;
+  }
+}
 
 /*SMALL DEVICES (STOR MOBIL, SMÅ PADDOR) - STARTSIDA */
-/*@media only screen and (min-width: 600px) {} */
+@media only screen and (min-width: 600px) {
+  .start-img-container {
+    height: 80vh;
+    width: 100vw;
+    margin-left: -7vw;
+  }
+  
+  .start-page-decor-box-1 {
+    width: 80vw;
+    height: 50vh;
+    top: 20vh;
+  }
+  @keyframes info-boxOne-animation {
+    from {
+      left: 700px;
+    }
+    to {
+      left: 5vw;
+    }
+  }
+  
+  .start-page-decor-box-2 {
+    width: 80vw;
+    height: 40vh;
+    top: 27vh;
+  }
+  
+  @keyframes info-boxTwo-animation {
+    from {
+      left: -700px;
+    }
+    to {
+      left: 10vw;
+    }
+  }
+  .start-page-info-box {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    height: 30vh;
+    width: 90vw;
+    left: 7%;
+    padding-bottom: 5vh;
+    font-size: 0.8rem;
+  }
+  
+  @keyframes info-boxInfo-animation {
+    from {
+      top: -700px;
+    }
+    to {
+      top: 30vh;
+    }
+  }
+  
+  .start-page-headline {
+    font-size: 1rem;
+  }
+  
+  .start-page-btn {
+    width: 50%;
+    height: 10%;
+    margin-left: 25%;
+    font-size: 1rem;
+  }
+}
 
 /*MEDIUM DEVICES (PADDA) - STARTSIDA */
-/*@media only screen and (min-width: 768px) {} */
+@media only screen and (min-width: 768px) {
+  .start-img-container {
+    height: 80vh;
+    width: 100vw;
+    margin-left: -4vw;
+  }
+  
+  .start-page-decor-box-1 {
+    width: 80vw;
+    height: 50vh;
+    top: 20vh;
+  }
+  @keyframes info-boxOne-animation {
+    from {
+      left: 700px;
+    }
+    to {
+      left: 5vw;
+    }
+  }
+  
+  .start-page-decor-box-2 {
+    width: 80vw;
+    height: 40vh;
+    top: 27vh;
+  }
+  
+  @keyframes info-boxTwo-animation {
+    from {
+      left: -700px;
+    }
+    to {
+      left: 10vw;
+    }
+  }
+  .start-page-info-box {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    height: 30vh;
+    width: 90vw;
+    left: 7%;
+    padding-bottom: 5vh;
+    font-size: 1rem;
+  }
+  
+  @keyframes info-boxInfo-animation {
+    from {
+      top: -700px;
+    }
+    to {
+      top: 30vh;
+    }
+  }
+  
+  .start-page-headline {
+    font-size: 1.5rem;
+  }
+  
+  .start-page-btn {
+    width: 20%;
+    height: 10%;
+    margin-left: 70%;
+    font-size: 1rem;
+  }
+}
 
 /*LARGE DEVICES (LAPTOP) - STARTSIDA */
-/*@media only screen and (min-width: 992px) {} */
-
-/*X-LARGE DEVICES (STOR DATOR)- STARTSIDA */
-/*@media only screen and (min-width: 1200px) {} */
+@media only screen and (min-width: 992px) {
+  .start-img-container {
+    height: 80vh;
+    width: 100vw;
+    margin-left: -5vw;
+  }
+  
+  .start-page-decor-box-1 {
+    width: 80vw;
+    height: 50vh;
+    top: 10vh;
+  }
+  @keyframes info-boxOne-animation {
+    from {
+      left: 700px;
+    }
+    to {
+      left: 5vw;
+    }
+  }
+  
+  .start-page-decor-box-2 {
+    width: 80vw;
+    height: 40vh;
+    top: 17vh;
+  }
+  
+  @keyframes info-boxTwo-animation {
+    from {
+      left: -700px;
+    }
+    to {
+      left: 10vw;
+    }
+  }
+  .start-page-info-box {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    height: 30vh;
+    width: 90vw;
+    left: 7%;
+    padding-bottom: 5vh;
+    font-size: 1rem;
+  }
+  
+  @keyframes info-boxInfo-animation {
+    from {
+      top: -700px;
+    }
+    to {
+      top: 20vh;
+    }
+  }
+  
+  .start-page-headline {
+    font-size: 2rem;
+  }
+  
+  .start-page-btn {
+    width: 20%;
+    height: 10%;
+    margin-left: 70%;
+    font-size: 1rem;
+  }
+}
 
 /*ORIENTATION: LANDSCAPE - STARTSIDA*/
-/*@media only screen and (orientation: landscape) {} */
+@media only screen and (orientation: landscape) {
+  .start-img-container {
+    height: 80vh;
+    width: 100vw;
+    margin-left: -13vw;
+  }
+  
+  .start-page-decor-box-1 {
+    width: 50vw;
+    height: 50vh;
+    top: 18vh;
+  }
+  @keyframes info-boxOne-animation {
+    from {
+      left: 700px;
+    }
+    to {
+      left: 25vw;
+    }
+  }
+  
+  .start-page-decor-box-2 {
+    width: 60vw;
+    height: 50vh;
+    top: 25vh;
+  }
+  
+  @keyframes info-boxTwo-animation {
+    from {
+      left: -700px;
+    }
+    to {
+      left: 20vw;
+    }
+  }
+  .start-page-info-box {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    height: 50vh;
+    width: 50vw;
+    left: 27vw;
+    padding-bottom: 5vh;
+    font-size: 1rem;
+  }
+  
+  @keyframes info-boxInfo-animation {
+    from {
+      top: -700px;
+    }
+    to {
+      top: 20vh;
+    }
+  }
+  
+  .start-page-headline {
+    font-size: 2rem;
+  }
+  
+  .start-page-btn {
+    width: 20%;
+    height: 10%;
+    margin-left: 70%;
+    font-size: 1rem;
+  }
+}
 
 /*OMOSS-SIDA*/
 
