@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -221,20 +225,22 @@ body {
 
 .kontaktSid-h1 {
   color: white;
-  margin-left: 135px;
+  margin-left: 7vh;
+  margin-top:10vh
 }
 
 .kontaktSid-box1,
 .kontaktSid-box2 {
-  width: 480px;
-  height: 405px;
+  width: 40%;
+  height: 60vh;
   background: rgba(78, 88, 96, 0.2);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0vh 4vh 4vh rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
-  margin: 20px;
+  margin: 7vh;
   position: relative;
   animation-duration: 3s;
   animation-fill-mode: forwards;
+  float:left;
 }
 
 .kontaktSid-box1 {
@@ -247,32 +253,32 @@ body {
 
 @keyframes boxOneAnimation {
   from {
-    left: -700px;
+    left: -100vh;
   }
   to {
-    left: 0px;
+    left: 0%;
   }
 }
 
 @keyframes boxTwoAnimation {
   from {
-    right: -700px;
+    right: -100vh;
   }
   to {
-    right: 0px;
+    right: 0vh;
   }
 }
 
 .kontaktSid-kontaktBild {
-  width: 419px;
-  height: 212px;
-  margin: 20px 0 0 28px;
+  width: 85%;
+  height: 30vh;
+  margin: 5vh 5vh 0 5vh;
 }
 
 .kontaktSid-container-content {
   color: white;
-  margin-left: 30px;
-  margin-top: 56px;
+  margin-left: 5vh;
+  margin-top: 8vh;
 }
 
 .kontaktSid-container-content a {
@@ -283,41 +289,41 @@ body {
 .kontaktSid-container-content a:hover {
   color: grey;
 }
-.kontaktSid-container-boxar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 
 .kontaktSid-kontaktformulär,
 .kontaktSid-formulärBild {
   background: #85a6a5;
-  box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.25);
-  width: 550px;
-  height: 635px;
-  margin-top: 40px;
+  box-shadow: 0vh 4vh 100vh rgba(0, 0, 0, 0.25);
+  height: 90vh;
+  width:60%;
+  float:left;
 }
 .kontaktSid-formulärBild {
-  width: 450px;
-  height: 635px;
+  width: 40%;
 }
 
 .kontaktSid-container-formulär {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: row;
+  margin-top: 10vh;
+  margin-bottom: 20vh;
+  width:80%;
+  box-shadow: 0vh 4vh 4vh rgba(0, 0, 0, 0.25);
+}
+
+.test{
+  display:flex;
+  width:100vw;
   justify-content: center;
-  margin-bottom: 50px;
+  align-items: center;
+  margin-left:-8%;
 }
 
 #contactInfo {
   width: 80%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 2vh 2vh;
   box-sizing: border-box;
   border: none;
   background: #85a6a5;
-  border-bottom: 2px solid white;
+  border-bottom: 0.3vh solid white;
   color: white;
 }
 #contactInfo ::placeholder {
@@ -325,16 +331,16 @@ body {
 }
 
 #meddelande {
-  width: 80%;
-  height: 10%;
+  width: 90%;
+  height: 15vh;
   border: none;
-  border-radius: 5px;
+  border-radius: 1vh;
 }
 
 form,
 .kontaktSid-h2 {
-  margin-left: 30px;
-  margin-top: 60px;
+  margin-left: 3vw;
+  margin-top: 8vh;
 }
 
 .kontaktSid-h2 {
@@ -343,15 +349,15 @@ form,
 
 .kontaktSid-btn {
   background: linear-gradient(90deg, #34363a 0%, #34363a 100%);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1vh 1vh rgba(0, 0, 0, 0.25);
   color: #e5e5e5;
-  width: 83px;
+  width: 80px;;
   height: 30px;
-  border-radius: 4px;
+  border-radius: 1vh;
   border: none;
   justify-content: space-between;
-  margin-right: 20px;
-  font-size: 15px;
+  margin-right: 2vw;
+  font-size: 0.7em;
 }
 .arrow-down {
   width: 0;
@@ -363,6 +369,91 @@ form,
   border-radius: 2px;
   margin-top: -2px;
 }
+
+@media only screen and (max-width: 1024px) {
+
+  .kontaktSid-box1,
+.kontaktSid-box2 {
+  width: 80%;
+}
+.kontaktSid-kontaktformulär {
+  clear:float;
+  width:90%;
+  height:90vh;
+  /* margin-left:7px; */
+  vertical-align: middle;
+}
+.kontaktSid-formulärBild{
+  display:none;
+}
+}
+
+@media only screen and (max-width: 600px){ 
+  body{
+    width:100%;
+    vertical-align: middle;
+  }
+  h2{
+    font-size: 25px;
+  }
+ .kontaktSid-container-formulär {
+    width:90%;
+    margin-left:8vw;
+    font-size: 12pt;
+  }
+  .kontaktSid-kontaktformulär{
+    object-fit: cover;
+    padding:0 30px 0 30px;
+    margin-left:5vw;
+  }
+}
+@media only screen and (max-width: 480px){
+  .kontaktSid-container-formulär{
+    width:100%;
+  }
+  .kontaktSid-kontaktBild{
+    margin: 5vh 5vh 0 3vh;
+  }
+  .kontaktSid-kontaktformulär{
+    height:600px;
+  }
+}
+  @media only screen and (max-width: 400px){
+body{
+  overflow-x: hidden;
+  vertical-align: middle;
+}
+
+.container{
+  margin:0;
+}
+.kontaktSid-box1,
+.kontaktSid-box2{
+  width:100%;
+
+}
+.kontaktSid-container-formulär{
+  width:100%;
+}
+.kontaktSid-kontaktformulär{
+  width:90%;
+  height:600px;
+}
+.test{
+  margin-left: 0;
+}
+form,
+.kontaktSid-h2 {
+  margin-top: 5vh;
+  justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+}
+
+
+
 
 /*STARTSIDA*/
 
@@ -1323,5 +1414,4 @@ form,
     top: 25%;
     left: 12%;
   }
-
 }
