@@ -31,6 +31,13 @@ body {
   height: 100px;
   background-color: #181818;
 }
+.navchar{
+  background-color: #181818;
+  color:#ffffff;
+}
+.fa-robot{
+  color:white;
+}
 
 .navbar-link-container {
   margin-left: 60%;
@@ -39,6 +46,14 @@ body {
   justify-content: space-evenly;
 }
 
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-collapse{
+  margin-left: 60%;
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly; 
+}
+}
 .chnavbar-brand {
   color: white;
   font-size: 28pt;
