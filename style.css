@@ -31,6 +31,15 @@ body {
   height: 100px;
   background-color: #181818;
 }
+.navchar {
+  background-color: #181818;
+  color: #ffffff;
+  box-shadow: 0vh 4vh 4vh rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+.fa-robot {
+  color: white;
+}
 
 .navbar-link-container {
   margin-left: 60%;
@@ -39,6 +48,13 @@ body {
   justify-content: space-evenly;
 }
 
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    margin-left: 60%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 .chnavbar-brand {
   color: white;
   font-size: 28pt;
@@ -60,7 +76,6 @@ body {
   font-size: 28pt;
   margin-right: 40px;
 }
-
 
 .logotype {
   height: 80px;
@@ -126,7 +141,6 @@ body {
     margin-top: 10px;
   }
 
-  
   .logotype {
     height: 30px;
   }
@@ -194,32 +208,31 @@ body {
 
 /*LARGE DEVICES (LAPTOP) - NAVBAR/FOOTER */
 @media only screen and (min-width: 992px) {
-    /*FOOTER*/
+  /*FOOTER*/
 
-    .chfooter {
-      width: 100vw;
-      height: 150px;
-      font-size: 1.5rem;
-      margin-bottom: 0px;
-      padding-right: 15px;
-      padding-left: 15px;
-    }
+  .chfooter {
+    width: 100vw;
+    height: 150px;
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 /*ORIENTATION: LANDSCAPE - NAVBAR/FOOTER*/
 @media only screen and (orientation: landscape) {
-      /*FOOTER*/
+  /*FOOTER*/
 
-      .chfooter {
-        width: 100vw;
-        height: 150px;
-        font-size: 1.5rem;
-        margin-bottom: 0px;
-        padding-right: 30px;
-        padding-left: 30px;
-      }
+  .chfooter {
+    width: 100vw;
+    height: 150px;
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }
-
 
 /*KONTAKTSIDA*/
 
@@ -245,7 +258,6 @@ body {
   position: relative;
   animation-duration: 3s;
   animation-fill-mode: forwards;
-
 }
 
 .contact-box-1 {
@@ -311,8 +323,8 @@ body {
   background: #85a6a5;
   box-shadow: 0vh 4vh 100vh rgba(0, 0, 0, 0.25);
   height: 90vh;
-  width:60%;
-  float:left;
+  width: 60%;
+  float: left;
 }
 .contact-form-img {
   width: 40%;
@@ -347,7 +359,7 @@ body {
   background: linear-gradient(90deg, #34363a 0%, #34363a 100%);
   box-shadow: 0px 1vh 1vh rgba(0, 0, 0, 0.25);
   color: #e5e5e5;
-  width: 80px;;
+  width: 80px;
   height: 30px;
   border-radius: 1vh;
   border: none;
@@ -366,6 +378,114 @@ body {
   margin-top: -2px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .kontaktSid-box1,
+  .kontaktSid-box2 {
+    width: 80%;
+  }
+  .kontaktSid-kontaktformulär {
+    clear: float;
+    width: 90%;
+    height: 90vh;
+    /* margin-left:7px; */
+    vertical-align: middle;
+  }
+  .kontaktSid-formulärBild {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%;
+    vertical-align: middle;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .kontaktSid-container-formulär {
+    width: 90%;
+    margin-left: 8vw;
+    font-size: 12pt;
+  }
+  .kontaktSid-kontaktformulär {
+    object-fit: cover;
+    padding: 0 30px 0 30px;
+    margin-left: 5vw;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .kontaktSid-container-formulär {
+    width: 100%;
+  }
+  .kontaktSid-kontaktBild {
+    margin: 5vh 5vh 0 3vh;
+  }
+  .kontaktSid-kontaktformulär {
+    height: 600px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  body {
+    overflow-x: hidden;
+    vertical-align: middle;
+  }
+
+  .container {
+    margin: 0;
+  }
+  .kontaktSid-box1,
+  .kontaktSid-box2 {
+    width: 100%;
+  }
+  .kontaktSid-container-formulär {
+    width: 100%;
+  }
+  .kontaktSid-kontaktformulär {
+    width: 90%;
+    height: 600px;
+  }
+  .test {
+    margin-left: 0;
+  }
+  form,
+  .kontaktSid-h2 {
+    margin-top: 5vh;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+  }
+}
+
+/*STARTSIDA*/
+
+.start-img-container {
+  background-color: black;
+  color: white;
+  height: 90vh;
+  width: 100vw;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  z-index: 0;
+}
+
+.start-page-decor-box-1 {
+  background: linear-gradient(180deg, #85a6a5 0%, rgba(255, 255, 255, 0) 100%),
+    #4e5860;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 700px;
+  height: 600px;
+  position: absolute;
+  z-index: 1;
+  left: 22%;
+  top: 25%;
+  animation-name: info-boxOne-animation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes info-boxOne-animation {
+  from {
+    left: 700px;}}
 
 /*STARTSIDA*/
 
@@ -418,58 +538,76 @@ body {
     animation-duration: 3s;
     animation-fill-mode: forwards;
   }
-  
-  @keyframes info-boxTwo-animation {
-    from {
-      left: -700px;
-    }
-    to {
-      left: 350px;
-    }
+  to {
+    left: 300px;
   }
-  .start-page-info-box {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-evenly;
-    padding-left: 50px;
-    padding-right: 50px;
-    background: #4e5860;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    height: 600px;
-    width: 800px;
-    z-index: 3;
-    position: absolute;
-    left: 30%;
-    top: 30%;
-    padding-bottom: 20px;
-    animation-name: info-boxInfo-animation;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
+
+
+.start-page-decor-box-2 {
+  background: rgba(169, 206, 194, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 750px;
+  height: 750px;
+  position: absolute;
+  z-index: 2;
+  left: 25%;
+  top: 20%;
+  animation-name: info-boxTwo-animation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes info-boxTwo-animation {
+  from {
+    left: -700px;
   }
-  
-  @keyframes info-boxInfo-animation {
-    from {
-      top: -700px;
-    }
-    to {
-      top: 230px;
-    }
+  to {
+    left: 350px;
   }
-  
-  .start-page-headline {
-    font-size: 36pt;
+}
+.start-page-info-box {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  padding-left: 50px;
+  padding-right: 50px;
+  background: #4e5860;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 600px;
+  width: 800px;
+  z-index: 3;
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  padding-bottom: 20px;
+  animation-name: info-boxInfo-animation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes info-boxInfo-animation {
+  from {
+    top: -700px;
   }
-  
-  .start-page-btn {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: #34363a;
-    color: white;
-    width: 20%;
-    height: 10%;
-    margin-left: 70%;
-    border: none;
-    font-size: 14pt;
+  to {
+    top: 230px;
   }
+}
+
+.start-page-headline {
+  font-size: 36pt;
+}
+
+.start-page-btn {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #34363a;
+  color: white;
+  width: 20%;
+  height: 10%;
+  margin-left: 70%;
+  border: none;
+  font-size: 14pt;
+}
 
 /*EXTRA SMALL DEVICES (MOBIL) - STARTSIDA */
 @media only screen and (max-width: 600px) {
@@ -478,7 +616,7 @@ body {
     width: 100vw;
     margin-left: -5vw;
   }
-  
+
   .start-page-decor-box-1 {
     width: 80vw;
     height: 50vh;
@@ -492,13 +630,13 @@ body {
       left: 5vw;
     }
   }
-  
+
   .start-page-decor-box-2 {
     width: 80vw;
     height: 40vh;
     top: 27vh;
   }
-  
+
   @keyframes info-boxTwo-animation {
     from {
       left: -700px;
@@ -516,7 +654,7 @@ body {
     padding-bottom: 5vh;
     font-size: 0.6rem;
   }
-  
+
   @keyframes info-boxInfo-animation {
     from {
       top: -700px;
@@ -525,11 +663,11 @@ body {
       top: 30vh;
     }
   }
-  
+
   .start-page-headline {
     font-size: 1rem;
   }
-  
+
   .start-page-btn {
     width: 50%;
     height: 10%;
@@ -545,7 +683,7 @@ body {
     width: 100vw;
     margin-left: -7vw;
   }
-  
+
   .start-page-decor-box-1 {
     width: 80vw;
     height: 50vh;
@@ -559,13 +697,13 @@ body {
       left: 5vw;
     }
   }
-  
+
   .start-page-decor-box-2 {
     width: 80vw;
     height: 40vh;
     top: 27vh;
   }
-  
+
   @keyframes info-boxTwo-animation {
     from {
       left: -700px;
@@ -583,7 +721,7 @@ body {
     padding-bottom: 5vh;
     font-size: 0.8rem;
   }
-  
+
   @keyframes info-boxInfo-animation {
     from {
       top: -700px;
@@ -592,11 +730,11 @@ body {
       top: 30vh;
     }
   }
-  
+
   .start-page-headline {
     font-size: 1rem;
   }
-  
+
   .start-page-btn {
     width: 50%;
     height: 10%;
@@ -612,7 +750,7 @@ body {
     width: 100vw;
     margin-left: -5vw;
   }
-  
+
   .start-page-decor-box-1 {
     width: 80vw;
     height: 50vh;
@@ -626,13 +764,13 @@ body {
       left: 5vw;
     }
   }
-  
+
   .start-page-decor-box-2 {
     width: 80vw;
     height: 40vh;
     top: 27vh;
   }
-  
+
   @keyframes info-boxTwo-animation {
     from {
       left: -700px;
@@ -650,7 +788,7 @@ body {
     padding-bottom: 5vh;
     font-size: 1rem;
   }
-  
+
   @keyframes info-boxInfo-animation {
     from {
       top: -700px;
@@ -659,11 +797,11 @@ body {
       top: 30vh;
     }
   }
-  
+
   .start-page-headline {
     font-size: 1.5rem;
   }
-  
+
   .start-page-btn {
     width: 20%;
     height: 10%;
@@ -679,7 +817,7 @@ body {
     width: 100vw;
     margin-left: -5vw;
   }
-  
+
   .start-page-decor-box-1 {
     width: 80vw;
     height: 50vh;
@@ -693,13 +831,13 @@ body {
       left: 5vw;
     }
   }
-  
+
   .start-page-decor-box-2 {
     width: 80vw;
     height: 40vh;
     top: 17vh;
   }
-  
+
   @keyframes info-boxTwo-animation {
     from {
       left: -700px;
@@ -717,7 +855,7 @@ body {
     padding-bottom: 5vh;
     font-size: 1rem;
   }
-  
+
   @keyframes info-boxInfo-animation {
     from {
       top: -700px;
@@ -726,11 +864,11 @@ body {
       top: 20vh;
     }
   }
-  
+
   .start-page-headline {
     font-size: 2rem;
   }
-  
+
   .start-page-btn {
     width: 20%;
     height: 10%;
@@ -747,7 +885,7 @@ body {
     float: left;
     margin-left: -410px;
   }
-  
+
   .start-page-decor-box-1 {
     width: 50vw;
     height: 50vh;
@@ -761,13 +899,13 @@ body {
       left: 25vw;
     }
   }
-  
+
   .start-page-decor-box-2 {
     width: 60vw;
     height: 50vh;
     top: 25vh;
   }
-  
+
   @keyframes info-boxTwo-animation {
     from {
       left: -700px;
@@ -785,7 +923,7 @@ body {
     padding-bottom: 5vh;
     font-size: 1rem;
   }
-  
+
   @keyframes info-boxInfo-animation {
     from {
       top: -700px;
@@ -794,11 +932,11 @@ body {
       top: 20vh;
     }
   }
-  
+
   .start-page-headline {
     font-size: 2rem;
   }
-  
+
   .start-page-btn {
     width: 20%;
     height: 10%;
@@ -968,7 +1106,8 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.img-1, .img-2 {
+.img-1,
+.img-2 {
   height: inherit;
   width: inherit;
 }
