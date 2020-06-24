@@ -11,7 +11,7 @@ body {
   font-family: 'Quicksand', sans-serif;
   font-size: 100%;
   box-sizing: content-box;
-  display:inline-flex;
+  display: inline-flex;
   flex-flow: column;
   background-color: #34363a;
 }
@@ -80,10 +80,7 @@ body {
   margin: 0px;
   width: 100%;
   height: 100%;
-
 }
-
-/*EXTRA SMALL*/
 @media only screen and (max-width: 600px) {
   /*NAVBAR*/
   .chnavbar {
@@ -147,7 +144,6 @@ body {
   }
 }
 
-/*SMALL*/
 @media only screen and (min-width: 600px) {
   /*NAVBAR*/
   .chnavbar {
@@ -179,8 +175,6 @@ body {
     height: 7vh;
   }
 
-  /*FOOTER*/
-
   .chfooter {
     background-color: #181818;
     color: white;
@@ -209,70 +203,68 @@ body {
     color: #34363a;
   }
 }
-/*MEDIUM*/
-@media only screen and (min-width: 768px) {
-    /*NAVBAR*/
-    .chnavbar {
-      background-color: #181818;
-      box-shadow: 0vh 4vh 4vh rgba(0, 0, 0, 0.25);
-      z-index: 1;
-      padding-right: 3vw !important;
-    }
-  
-    .nav-link {
-      color: white !important;
-      font-size: 1.5rem;
-    }
-    .fa-robot {
-      color: white;
-      font-size: 2.5rem;
-    }
-    .navbar-nav {
-      width: 90%;
-      display: flex;
-      justify-content: space-between;
-      background-color: #181818;
-      margin-right: 0px;
-      margin-left: 0px;
-      margin-top: 0px;
-      text-align: center;
-    }
-    .navbar-logo {
-      height: 7vh;
-    }
-  
-    /*FOOTER*/
-  
-    .chfooter {
-      background-color: #181818;
-      color: white;
-      width: inherit;
-      display: flex;
-      flex-flow: row;
-      justify-content: space-between;
-      align-items: center;
-      height: 125px;
-      margin-bottom: 0px;
-      padding-right: 4vw;
-      padding-left: 3vw;
-      font-size: 1rem;
-    }
-    .footer-contact-info {
-      padding-top: 2vh;
-    }
-    .footer-nav-link {
-      color: white;
-      font-size: 1rem;
-    }
-  
-    .footer-nav-link:hover {
-      cursor: pointer;
-      text-decoration: none;
-      color: #34363a;
-    }
-}
 
-/*LARGE DEVICES (LAPTOP) - NAVBAR/FOOTER */
+@media only screen and (min-width: 768px) {
+  /*NAVBAR*/
+  .chnavbar {
+    background-color: #181818;
+    box-shadow: 0vh 4vh 4vh rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    padding-right: 3vw !important;
+  }
+
+  .nav-link {
+    color: white !important;
+    font-size: 1.5rem;
+  }
+  .fa-robot {
+    color: white;
+    font-size: 2.5rem;
+  }
+  .navbar-nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #181818;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    text-align: center;
+  }
+  .navbar-logo {
+    height: 7vh;
+  }
+
+  /*FOOTER*/
+
+  .chfooter {
+    background-color: #181818;
+    color: white;
+    width: inherit;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 125px;
+    margin-bottom: 0px;
+    padding-right: 4vw;
+    padding-left: 3vw;
+    font-size: 1rem;
+  }
+  .footer-contact-info {
+    padding-top: 2vh;
+  }
+  .footer-nav-link {
+    color: white;
+    font-size: 1rem;
+  }
+
+  .footer-nav-link:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #34363a;
+  }
+}
 @media only screen and (min-width: 992px) {
   /*NAVBAR*/
   .chnavbar {
@@ -335,67 +327,64 @@ body {
   }
 }
 
-/*LARGE*/
 @media only screen and (min-width: 1200px) {
-    /*NAVBAR*/
-    .chnavbar {
-      background-color: #181818;
-      box-shadow: 0vh 4vh 4vh rgba(0, 0, 0, 0.25);
-      z-index: 1;
-      padding-right: 1vw !important;
-    }
-  
-    .nav-link {
-      color: white !important;
-      font-size: 1.5rem;
-    }
-    .fa-robot {
-      color: white;
-      font-size: 2rem;
-    }
-    .navbar-nav {
-      width: 70%;
-      display: flex;
-      justify-content: space-around;
-      background-color: #181818;
-      margin-left: 50%;
-      margin-right: 0vw;
-      margin-top: 0px;
-      text-align: center;
-    }
-    .navbar-logo {
-      height: 5vh;
-    }
-  
-    /*FOOTER*/
-  
-    .chfooter {
-      background-color: #181818;
-      color: white;
-      width: inherit;
-      display: flex;
-      flex-flow: row;
-      justify-content: space-between;
-      align-items: center;
-      height: 150px;
-      margin-bottom: 0px;
-      padding-right: 4vw;
-      padding-left: 3vw;
-      font-size: 1.5rem;
-    }
-    .footer-contact-info {
-      padding-top: 2vh;
-    }
-    .footer-nav-link {
-      color: white;
-      font-size: 1.5rem;
-    }
-  
-    .footer-nav-link:hover {
-      cursor: pointer;
-      text-decoration: none;
-      color: #34363a;
-    }
+  /*NAVBAR*/
+  .chnavbar {
+    background-color: #181818;
+    box-shadow: 0vh 4vh 4vh rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    padding-right: 1vw !important;
+  }
+
+  .nav-link {
+    color: white !important;
+    font-size: 1.5rem;
+  }
+  .fa-robot {
+    color: white;
+    font-size: 2rem;
+  }
+  .navbar-nav {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #181818;
+    margin-left: 50%;
+    margin-right: 0vw;
+    margin-top: 0px;
+    text-align: center;
+  }
+  .navbar-logo {
+    height: 5vh;
+  }
+
+  /*FOOTER*/
+
+  .chfooter {
+    background-color: #181818;
+    color: white;
+    width: inherit;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    margin-bottom: 0px;
+    padding-right: 4vw;
+    padding-left: 3vw;
+    font-size: 1.5rem;
+  }
+  .footer-contact-info {
+    padding-top: 2vh;
+  }
+  .footer-nav-link {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .footer-nav-link:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #34363a;
+  }
 }
-
-
