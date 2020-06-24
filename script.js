@@ -1,5 +1,4 @@
 const aboutBtn = document.getElementById('about-btn');
-const submitBtn = document.getElementById('contact-submit-btn');
 
 aboutBtn.addEventListener('click', handleClick = () => {
     window.location.href = "about.html";
