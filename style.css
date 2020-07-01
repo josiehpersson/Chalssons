@@ -15,6 +15,16 @@ body {
   flex-flow: column;
   background-color: #34363a;
 }
+
+.container {
+  flex-flow: column;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: content-box;
+  width: 100vw;
+  width: 100%;
+  height: 100%;
+}
 /*----------------------NAVBAR-------------------------------------------------------------------*/
 .chnavbar {
   background-color: #181818;
