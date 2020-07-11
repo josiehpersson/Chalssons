@@ -26,10 +26,36 @@ a:hover {
   text-align: center;
 }
 
-/* formulär */
-.kontaktFormulärBakgrund{
-  background:#fbfbfb;
+.BoxOne {
+  animation-name: boxOne;
+  animation-duration: 4s;
+}
+@keyframes boxOne {
+  0% {
+    left: -700px;
   }
+  100% {
+    left: 0px;
+  }
+}
+
+.BoxTwo {
+  animation-name: boxTwo;
+  animation-duration: 4s;
+}
+@keyframes boxTwo {
+  0% {
+    right: -700px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+/* formulär */
+.kontaktFormulärBakgrund {
+  background: #fbfbfb;
+}
 .imgBox {
   padding-right: 0px;
   height: 100%;
