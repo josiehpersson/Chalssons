@@ -228,6 +228,8 @@
   .about-decoration-img-3 {
     height: 50%;
     width: 70%;
+    height:50%;
+    width:70%;
     top: 22%;
     left: 15%;
   }
@@ -347,6 +349,7 @@
   .information-container {
     position: relative;
     height: 30vh;
+    height: 304px;
     width: 90%;
     margin-top: 2vh;
     padding: 0 5vw 0 0vw;
