@@ -16,7 +16,7 @@ body {
   background-color: #34363a;
 }
 
-.container {
+.page-container {
   flex-flow: column;
   padding: 0px;
   margin: 0px;
