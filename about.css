@@ -20,7 +20,7 @@
     left: -700px;
   }
   100% {
-    left: 0px;
+    left: 0;
   }
 }
 
@@ -29,7 +29,7 @@
     right: -700px;
   }
   100% {
-    right: 0px;
+    right: 0;
   }
 }
 
@@ -69,9 +69,11 @@
   margin: 5% 0 0 2%;
   height: 85%;
   width: 50%;
+  box-sizing: border-box;
   background-image: url('/img/bilen.png');
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .img-container-2 {
@@ -119,6 +121,11 @@ align-items: center;
 min-height: 80vh;
 }
 
+.information-container-2 {
+  display: flex;
+  flex-flow: column-reverse;
+}
+
 .img-container, .img-container-2 {
   margin: 0 auto 0 auto;
 }
@@ -133,11 +140,27 @@ min-height: 80vh;
 .boxes-box {
   height: 50%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
 }
 
-.text-box, .text-box:nth-of-type(odd) {
+.img-container, .img-container-2 {
+  height: 100%;
+  width: 80%;
+  background-size: cover;
+  background-position: center;
+}
+
+.text-box {
   height: 50%;
   width: 100%;
+  text-align: center;
+  margin-top: 15%;
+}
+
+.text-box:nth-of-type(odd) {
   text-align: center;
 }
 }
