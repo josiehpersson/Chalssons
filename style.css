@@ -16,7 +16,7 @@ body {
   background-color: #34363a;
 }
 
-.container {
+.page-container {
   flex-flow: column;
   padding: 0px;
   margin: 0px;
@@ -69,7 +69,6 @@ body {
   margin-bottom: 0px;
   padding-right: 100px;
   padding-left: 100px;
-  margin-top: 5%;
 }
 .footer-nav-link {
   color: white;
