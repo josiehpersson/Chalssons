@@ -20,7 +20,7 @@
     left: -700px;
   }
   100% {
-    left: 0;
+    left: 0px;
   }
 }
 
@@ -29,7 +29,7 @@
     right: -700px;
   }
   100% {
-    right: 0;
+    right: 0px;
   }
 }
 
