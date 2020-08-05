@@ -125,6 +125,11 @@
         left: 11%;
         font-size:75%;
       }
+
+      .start-backdrop-img{
+        height: 550px;
+    width: 803px;
+      }
       
       @keyframes info-boxInfo-animation {
         from {
