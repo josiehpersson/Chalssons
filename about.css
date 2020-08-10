@@ -8,6 +8,7 @@
   color: white;
   animation-name: boxAnimation;
   animation-duration: 4s;
+  position: relative;
 }
 
 .information-container-2 {
@@ -19,6 +20,7 @@
   color: white;
   animation-name: box2Animation;
   animation-duration: 4s;
+  position: relative;
 }
 
 @keyframes boxAnimation {
